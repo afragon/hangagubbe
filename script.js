@@ -101,13 +101,16 @@ let test2 = function (arr, guess) {
 
     //////////// GUESS WRONG /////////////
   } else if (!arrTheWord.includes(guess) && life > 0) {
-    life--;
     if (!chosenWords.includes(guess)) {
+      life--;
       chosenWords.push(guess);
       displayWrongWord(chosenWords.join(' '));
       displayLife(life);
-    } else {
+    } else if (chosenWords.includes(guess)) {
       displayInfo('Redan taget!');
+    } else {
+      life--;
+      displayLife(life);
     }
 
     //////////// LOSING /////////////

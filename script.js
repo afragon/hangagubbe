@@ -80,6 +80,7 @@ decideBarEl.addEventListener('keydown', function (e) {
     calcChallenge(arrTheWord);
     displayWord(secretWord.join(' '));
     displayLife(life);
+    decideBarEl.classList.add('hidden');
   }
 });
 

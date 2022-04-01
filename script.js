@@ -61,7 +61,7 @@ const init = function () {
 init();
 
 submitBtn.addEventListener('click', function () {
-  guess = guessBar.value;
+  guess = guessBar.value.toLowerCase();
   console.log(guess);
   test2(arrTheWord, guess);
 });
@@ -101,3 +101,4 @@ let test2 = function (arr, guess) {
 };
 
 resetBtn.addEventListener('click', init);
+

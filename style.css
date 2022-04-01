@@ -29,6 +29,7 @@
   font-family: 'Press Start 2P', sans-serif;
   float: left;
   margin-bottom: 5px;
+  color: black;
 }
 
 #submit {
@@ -40,6 +41,7 @@
   font-family: 'Press Start 2P', sans-serif;
   float: center;
   margin-top: 0px;
+  color: black;
 }
 
 #reset {
@@ -140,4 +142,3 @@ body {
   max-width: 400px;
   margin: 0 auto;
 }
-

@@ -4,6 +4,10 @@
   text-align: left;
 }
 
+.life {
+  width: 100%;
+}
+
 .info {
   color: white;
   font-size: x-small;

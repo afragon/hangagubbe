@@ -10,7 +10,6 @@ const dictonary = [
   'hängväxt',
   'fantastisk',
   'polotröja',
-  'kentuckyfriedchicken',
 ];
 
 const guessBar = document.getElementById('submitWord');
@@ -106,12 +105,10 @@ let test2 = function (arr, guess) {
     if (!chosenWords.includes(guess)) {
       chosenWords.push(guess);
       displayWrongWord(chosenWords.join(' '));
+      displayLife(life);
     } else {
       displayInfo('Redan taget!');
     }
-
-    console.log(chosenWords);
-    displayLife(life);
 
     //////////// LOSING /////////////
   } else if (!arrTheWord.includes(guess) && life == 0) {

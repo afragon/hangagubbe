@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
+#submitOwnWord {
+  border: 1px solid gold;
+  height: 16px;
+  width: 120px;
+  font-size: x-small;
+  text-align: left;
+  font-family: 'Press Start 2P', sans-serif;
+  float: left;
+  margin-bottom: 5px;
+  color: black;
+  margin-top: 1px;
+}
+
 .titel {
   text-align: left;
 }
@@ -47,19 +60,20 @@
 #reset {
   border: none;
   height: 20px;
-  font-size: x-small;
+  font-size: xx-small;
   text-align: center;
   background-color: #eee;
   cursor: pointer;
   font-family: 'Press Start 2P', sans-serif;
   float: right;
   background-color: red;
+  margin-top: 1px;
 }
 
 #decide {
   border: none;
   height: 20px;
-  font-size: x-small;
+  font-size: xx-small;
   text-align: center;
   background-color: #eee;
   cursor: pointer;

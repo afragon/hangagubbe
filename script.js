@@ -65,6 +65,9 @@ const init = function () {
   calcChallenge(arrTheWord);
   displayWord(secretWord.join(' '));
   displayLife(life);
+  displayWrongWord();
+  displayInfo('<< Gissa bokstav');
+  chosenWords = ['⛔️'];
   console.log(theWord);
 };
 
@@ -80,6 +83,9 @@ decideBarEl.addEventListener('keydown', function (e) {
     calcChallenge(arrTheWord);
     displayWord(secretWord.join(' '));
     displayLife(life);
+    displayWrongWord();
+    displayInfo('<< Gissa bokstav');
+    chosenWords = ['⛔️'];
     decideBarEl.classList.add('hidden');
   }
 });

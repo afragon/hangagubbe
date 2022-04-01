@@ -19,6 +19,7 @@ const currentLife = document.querySelector('.life');
 const theWordEL = document.querySelector('.theWord');
 const WrongWordsdEL = document.querySelector('.wrongWords');
 const infoEl = document.querySelector('.info');
+const ownWordEl = document.getElementById('decide');
 
 let decideWord, theWord, arrTheWord, secretWord, guess, life, points;
 
@@ -65,6 +66,15 @@ const init = function () {
   displayLife(life);
   console.log(theWord);
 };
+
+ownWordEl.addEventListener('click', function () {
+  theWord = prompt('wooord?');
+  arrTheWord = [...theWord];
+  secretWord = [];
+  calcChallenge(arrTheWord);
+  displayWord(secretWord.join(' '));
+  displayLife(life);
+});
 
 ////////////////////////////////////
 ////////////////////////////////////
@@ -121,3 +131,4 @@ let test2 = function (arr, guess) {
 };
 
 resetBtn.addEventListener('click', init);
+

@@ -56,6 +56,19 @@
   background-color: red;
 }
 
+#decide {
+  border: none;
+  height: 20px;
+  font-size: x-small;
+  text-align: center;
+  background-color: #eee;
+  cursor: pointer;
+  font-family: 'Press Start 2P', sans-serif;
+  float: right;
+  background-color: gold;
+  margin-right: 10px;
+}
+
 .hidden {
   display: none;
 }

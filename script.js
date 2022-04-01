@@ -18,8 +18,12 @@ const submitBtn = document.getElementById('submit');
 const resetBtn = document.getElementById('reset');
 const currentLife = document.querySelector('.life');
 const theWordEL = document.querySelector('.theWord');
+const WrongWordsdEL = document.querySelector('.wrongWords');
+const infoEl = document.querySelector('.info');
 
 let decideWord, theWord, arrTheWord, secretWord, guess, life, points;
+
+let chosenWords = ['⛔️'];
 
 ////////////////////////////////////
 ////////////////////////////////////
@@ -34,8 +38,16 @@ const displayWord = function (message) {
   theWordEL.textContent = message;
 };
 
+const displayWrongWord = function (message) {
+  WrongWordsdEL.textContent = message;
+};
+
 const displayLife = function (points) {
   currentLife.src = `${points}.png`;
+};
+
+const displayInfo = function (message) {
+  infoEl.textContent = message;
 };
 
 ////////////////////////////////////
@@ -91,6 +103,14 @@ let test2 = function (arr, guess) {
     //////////// GUESS WRONG /////////////
   } else if (!arrTheWord.includes(guess) && life > 0) {
     life--;
+    if (!chosenWords.includes(guess)) {
+      chosenWords.push(guess);
+      displayWrongWord(chosenWords.join(' '));
+    } else {
+      displayInfo('Redan taget!');
+    }
+
+    console.log(chosenWords);
     displayLife(life);
 
     //////////// LOSING /////////////
@@ -101,4 +121,3 @@ let test2 = function (arr, guess) {
 };
 
 resetBtn.addEventListener('click', init);
-

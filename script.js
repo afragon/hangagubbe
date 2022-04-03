@@ -1,16 +1,6 @@
 'use strict';
 
-const dictonary = [
-  'sjöjungfru',
-  'walla',
-  'afra',
-  'noubarzadeh',
-  'falafel',
-  'corona',
-  'hängväxt',
-  'fantastisk',
-  'polotröja',
-];
+const dictonary = test;
 
 const guessBar = document.getElementById('submitWord');
 const submitBtn = document.getElementById('submit');

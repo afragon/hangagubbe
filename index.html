@@ -5,38 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Game#2 - Hänga Gubbe By Afragon</title>
+    <title>Flexbox</title>
   </head>
 
   <body>
+    <div class="parent">
+      <div class="container-header">
 
-    <div class="wrapper">
-      <header class="header">
-        <h2 class="titel">Hänga gubbe</h2>
-        <button value="send" id="reset">Random</button>
-        <button value="send" id="decide">Eget ord</button>
-        <input id="submitOwnWord" class="hidden" type="text" maxlength="20" placeholder="Skriv här..." /></input>
-        
-      </header>
-      
-      <div class="main">
-        <img class="life" src="10.png"> 
-      
+        <div class="headEl header1">
+          <h1 class="titel">Hänga gubbe</h1>
+        </div>
+
+        <div class="headEl header2">
+            <input id="submitOwnWord" class="hidden" type="text" maxlength="20" placeholder="Skriv här..." /></input>
+        </div>
+
+        <div class="headEl header3">
+          <button value="send" id="decide">Eget ord</button>
+        </div>
+
+        <div class="headEl header4">
+          <button value="send" id="reset">Slumpa</button>
+        </div>
+
       </div>
 
-      <aside class="aside aside-1">
-        <h1 class="theWord"></h1>
-        <h1 class="wrongWords"></h1>
-      </aside>
+      <div class="container-main">
+        <div class="main1">
+            <p class="theWord">_ _ _ _ _ _ _ _ _ _</p>
+        </div>
 
-      <aside class="aside aside-2">
+        <div class="main2">
+            <p class="wrongWords">_ _ _ _ _ _ _ _ _ _</p>
+        </div>
+      </div>
 
-        <input id="submitWord" type="text" maxlength="1" placeholder="..." /></input>
-        <p class="info"> << Gissa bokstav</p>
-        <button value="send" id="submit">Check</button>
-      </aside>
+      <div class="container-fill">
+        <div class=" fill1">
+            <img class="life" src="10.png"> 
+        </div>
 
-      <footer class="footer">By Afragon</footer>
+        <div class="fill2">
+          <div class="fillEl fill3">
+            <p class="info">Gissa bokstav</p>
+          </div>
+
+          <div class="fillEl fill4">
+            <input id="submitWord" type="text" maxlength="1" placeholder="..." /></input>
+          </div>
+
+          <div class="fillEl fill5">
+            <button value="send" id="submit">Check</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-footer">By Afragon</div>
     </div>
 
     <script type="module" src="script.js"></script>

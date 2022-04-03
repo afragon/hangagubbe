@@ -99,6 +99,7 @@ submitBtn.addEventListener('click', function () {
   guess = guessBar.value.toLowerCase();
   console.log(guess);
   test2(arrTheWord, guess);
+  guessBar.value = '';
 });
 
 /////////////////////////////////////////////

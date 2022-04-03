@@ -3,7 +3,7 @@
 #submitOwnWord {
   border: 1px solid gold;
   height: 16px;
-  width: 100px;
+  width: 110px;
   font-size: x-small;
   text-align: left;
   font-family: 'Press Start 2P', sans-serif;
@@ -135,17 +135,48 @@
   background: black;
 }
 
-/*
-@media all and (min-width: 600px) {
-  .aside {
+@media all and (max-width: 400px) {
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 3;
+  }
+  .aside-2 {
+    order: 2;
     flex: 1 0 0;
+  }
+  .footer {
+    order: 4;
+  }
+  .life {
+    width: 100%;
   }
 }
 
+@media all and (min-width: 600px) {
+  .aside-1 {
+    order: 2;
+  }
+  .main {
+    order: 1;
+    flex: 1 0 0;
+  }
+  .aside-2 {
+    order: 1;
+    flex: 1 0 0;
+  }
+  .footer {
+    order: 4;
+  }
+  .life {
+    width: 100%;
+  }
+}
 
 @media all and (min-width: 800px) {
-  .main {
-    flex: 3 0px;
+  .aside {
+    flex: 0 0 1;
   }
   .aside-1 {
     order: 1;
@@ -159,13 +190,18 @@
   .footer {
     order: 4;
   }
+  .life {
+    width: 300px;
+  }
+  body {
+    max-width: 600px;
+  }
 }
-*/
 
 body {
   padding: 2em;
   font-family: 'Press Start 2P', sans-serif;
   background-color: lightcoral;
-  max-width: 400px;
+
   margin: 0 auto;
 }

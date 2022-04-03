@@ -3,13 +3,14 @@
 body {
   background-color: lightcoral;
   font-family: "Press Start 2P", sans-serif;
+  margin: auto 0;
+  padding: 5px;
 }
 
 .parent {
   display: block;
   flex-direction: column;
   justify-content: space-around;
-  margin: 10px;
   text-align: center;
 }
 

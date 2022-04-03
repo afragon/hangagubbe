@@ -186,6 +186,15 @@ body {
   color: white;
 }
 
+@media all and (min-width: 300px) {
+  .parent {
+    margin: auto;
+  }
+  .theWord {
+    font-size: 50%;
+  }
+}
+
 @media all and (min-width: 400px) {
   .parent {
     margin: auto;

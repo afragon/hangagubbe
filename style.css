@@ -15,6 +15,7 @@
 
 .titel {
   text-align: left;
+  font-size: 4vw;
 }
 
 .life {
@@ -88,9 +89,9 @@
 }
 
 .theWord {
-  font-size: medium;
   padding-top: 10px;
   color: black;
+  white-space: nowrap;
 }
 
 .wrapper {
@@ -115,6 +116,7 @@
   border-right: 5px solid black;
   border-bottom: 5px solid black;
   border-left: 5px solid black;
+  font-size: 3vw;
 }
 
 .main {
@@ -152,9 +154,12 @@
   .life {
     width: 100%;
   }
+  .theWord {
+    font-size: 6px;
+  }
 }
 
-@media all and (min-width: 600px) {
+@media all and (max-width: 600px) {
   .aside-1 {
     order: 2;
   }
@@ -172,9 +177,12 @@
   .life {
     width: 100%;
   }
+  .theWord {
+    font-size: 2vw;
+  }
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 600px) {
   .aside {
     flex: 0 0 1;
   }
@@ -196,12 +204,15 @@
   body {
     max-width: 600px;
   }
+  .theWord {
+    font-size: 1vw;
+  }
 }
 
 body {
   padding: 2em;
   font-family: 'Press Start 2P', sans-serif;
   background-color: lightcoral;
-
   margin: 0 auto;
+  font-size: 5px;
 }
